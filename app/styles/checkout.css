@@ -1,0 +1,28 @@
+/*! Paw Checkout v0.0.1 | License | https://patadestruidorademundos.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Anderson Camacho, Charles Vatin, Rafael Almeida,
+*/
+
+/* ==========================================================================
+   Base styles: Checkout
+   ========================================================================== */
+
+/*** Checkout
+***/
+
+#single-page-checkout {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#single-page-checkout .checkout-title {
+   margin-bottom: 0.5em ;
+}
+#single-page-checkout .checkout-title span {
+  height: auto;
+  color: #000;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
