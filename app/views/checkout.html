@@ -4,60 +4,106 @@
 	          <div class="row">
 	            <!-- login checkout-->
               <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red; ">
-                <div class="checkout-title">
-                   <span>1. Login</span>
-                </div>
-
-                <!--Form login --> 
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <div class="checkout-content-login"> 
+                  <div class="checkout-title">
+                     <span>1. Login</span>
                   </div>
 
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                  </div>
+                  <!--Form login --> 
+                  <form>
+                    <!-- email -->
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    
+                    <!-- password -->
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                    </div>
 
-                  <div class="form-group">
-                   <button type="submit" class="btn btn-default btn-lg btn-block">Continuar</button>
-                  </div>
+                    <div class="form-group">
+                     <button type="submit" class="btn btn-default btn-lg btn-block">Continuar</button>
+                    </div>
 
-                  <p class="forgot-password text-center">
-                    <a href="#" title="Esqueci minha senha">Esqueci minha senha</a>
-                  </p>
-                  <hr>
+                    <p class="forgot-password text-center">
+                      <a href="#" title="Esqueci minha senha">Esqueci minha senha</a>
+                    </p>
+                    <hr>
 
-                  <div class="form-group">
-                   <button type="submit" class="btn btn-default btn-lg btn-block">Fazer novo cadastro</button>
-                  </div>
-                </form>
-              </article>
-              
-              <!-- Form checkout -->  
-	            <article class="col-xs-12 col-sm-4 col-lg-4 disable-form-checkout" style="border: 1px solid red">
-                <div class="checkout-title">
-                  <span>1. Sou um novo cliente</span>
+                    <div class="form-group">
+                     <button type="submit" class="btn btn-default btn-lg btn-block">Fazer novo cadastro</button>
+                    </div>
+                  </form>
                 </div>
                 
-                <form> 
-                  <div class="form-group">
-                    <label for="exampleInputEmail2">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                  </div> 
-
-                  <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                <!-- Form checkout -->  
+                <div class="checkout-content-form">
+                  <div class="checkout-title">
+                    <span>1. Sou um novo cliente</span>
                   </div>
+                  <div class="row">
+                    <form>    
+                      <!-- e-mail -->  
+                      <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+                        <label for="exampleInputEmail2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                      </div> 
 
-                  <div class="form-group">
-                    <label for="exampleInputSobrenome2">Email</label>
-                    <input type="text" class="form-control" id="exampleInputSobrenome2" placeholder="jane.doe@example.com">
-                  </div>   
-                </form>
+                      <!-- name -->
+                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+                        <label for="exampleInputName2">Nome</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Seu nome">
+                      </div>
 
+                      <!-- last name -->
+                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+                        <label for="exampleInputSobrenome2">Sobrenome</label>
+                        <input type="text" class="form-control" id="exampleInputSobrenome2" placeholder="Sobrenome">
+                      </div>   
+
+                      <!-- CPF Checkout form -->
+                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+                        <label for="exampleInputCpf2">CPF</label>
+                        <input type="text" class="form-control" id="exampleInputCpf2" placeholder="000.000.000-00">
+                      </div>   
+
+                      <!-- date birth -->
+                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+                        <label for="exampleInputDataNascimento2">Data de Nascimento</label>
+                        <input type="text" class="form-control" id="exampleInputDataNascimento2" placeholder="00/00/0000">
+                      </div>
+
+                      <!-- password -->
+                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+                        <label for="exampleInputPassword2">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha">
+                      </div>
+
+                      <!-- password -->
+                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+                        <label for="exampleInputPassword2">Confirmação de Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirmar Senha">
+                      </div>   
+                      
+                      <!-- checkbox terms -->  
+                      <div class="col-xs-12 col-sm-12 col-lg-12 checkbox">
+                        <label>
+                          <input type="checkbox"> Li e concordo com os <a href="#" title="Termos">termos</a>
+                        </label>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+                        <button type="submit" class="btn btn-default btn-lg btn-block">Cadastrar</button>
+                      </div>
+                    </form>
+
+                    <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
+                        <a href="#" title="Voltar">Voltar</a>
+                      </span>  
+                    </p>
+                </div> 
               </article>
 
 	            <!-- pagemnto checkout -->  
