@@ -1,226 +1,366 @@
-		<!-- Checkout view -->
-          <div class="row">
-	         <section id="single-page-checkout" class="col-md-12 clearfix">
-	          <div class="row">
-	            <!-- login checkout-->
-              <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red; ">
-                <div class="checkout-content-login"> 
-                  <div class="checkout-title">
-                     <span>1. Login</span>
-                  </div>
+<!-- Checkout view -->
+<div class="row">
+ <section id="single-page-checkout" class="col-md-12 clearfix">
+  <div class="row">
+    <!-- login checkout-->
+    <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red; ">
+      <section class="contentlogin"> 
+        <header class="checkout-title">
+           <span>1. Login</span>
+        </header>
 
-                  <!--Form login --> 
-                  <form>
-                    <!-- email -->
-                    <div class="form-group">
-                      <label for="InputEmail1">Email</label>
-                      <input type="email" class="form-control" id="InputEmail1" placeholder="Email">
-                    </div>
-                    
-                    <!-- password -->
-                    <div class="form-group">
-                      <label for="InputPassword1">Senha</label>
-                      <input type="password" class="form-control" id="InputPassword1" placeholder="Senha">
-                    </div>
-
-                    <div class="form-group">
-                     <button type="submit" class="btn btn-default btn-lg btn-block">Continuar</button>
-                    </div>
-
-                    <p class="forgot-password text-center">
-                      <a href="#" title="Esqueci minha senha">Esqueci minha senha</a>
-                    </p>
-                    <hr>
-
-                    <div class="form-group">
-                     <button type="submit" class="btn btn-default btn-lg btn-block">Fazer novo cadastro</button>
-                    </div>
-                  </form>
-                </div>
-                
-                <!-- Form checkout -->  
-                <div class="checkout-content-form">
-                  <div class="checkout-title">
-                    <span>1. Sou um novo cliente</span>
-                  </div>
-                  <div class="row">
-                    <form>    
-                      <!-- e-mail -->  
-                      <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
-                        <label for="InputEmail2">Email</label>
-                        <input type="email" class="form-control" id="InputEmail2" placeholder="jane.doe@  .com">
-                      </div> 
-
-                      <!-- name -->
-                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                        <label for="InputName2">Nome</label>
-                        <input type="text" class="form-control" id="InputName2" placeholder="Seu nome">
-                      </div>
-
-                      <!-- last name -->
-                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                        <label for="InputSobrenome2">Sobrenome</label>
-                        <input type="text" class="form-control" id="InputSobrenome2" placeholder="Sobrenome">
-                      </div>   
-
-                      <!-- CPF Checkout form -->
-                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                        <label for="InputCpf2">CPF</label>
-                        <input type="text" class="form-control" id="InputCpf2" placeholder="000.000.000-00">
-                      </div>   
-
-                      <!-- date birth -->
-                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                        <label for="InputDataNascimento2">Data de Nascimento</label>
-                        <input type="text" class="form-control" id="InputDataNascimento2" placeholder="00/00/0000">
-                      </div>
-
-                      <!-- password -->
-                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                        <label for="InputPassword2">Senha</label>
-                        <input type="password" class="form-control" id="InputPassword2" placeholder="Senha">
-                      </div>
-
-                      <!-- password -->
-                      <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                        <label for="InputPassword2">Confirmação de Senha</label>
-                        <input type="password" class="form-control" id="InputPassword2" placeholder="Confirmar Senha">
-                      </div>   
-                      
-                      <!-- checkbox terms -->  
-                      <div class="col-xs-12 col-sm-12 col-lg-12 checkbox">
-                        <label>
-                          <input type="checkbox"> Li e concordo com os <a href="#" title="Termos">termos</a>
-                        </label>
-                      </div>
-
-                      <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
-                        <button type="submit" class="btn btn-default btn-lg btn-block">Cadastrar</button>
-                      </div>
-                    </form>
-
-                    <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
-                      <a href="#" title="Voltar">Voltar</a>
-                    </p>
-                  </div> 
-                </div>
-
-                <!-- New adress checkout -->
-                <div class="newsAdrres-checkout">
-                  <div class="checkout-title">
-                    <span>1. Novo Endereço</span>
-                  </div>
-                
-                 <div class="row"> 
-                 <form> 
-                 <!-- cep -->
-                  <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                    <label for="InputCep3">Cep*</label>
-                    <input type="cep" class="form-control" id="InputCep3" placeholder="00000-000">
-                  </div>
-                  
-                  <!-- link cep -->
-                  
-                  <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                    <div class="link-form"><a href="http://www.buscacep.correios.com.br/servicos/dnec/menuAction.do?Metodo=menuEndereco" title="Não sei meu CEP" target="_blank">Não sei meu CEP*</a></div> 
-                  </div> 
-                  
-                  <!-- receiver -->
-                  <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                    <label for="InputDestinatario3">Destinatário*</label>
-                   <input type="destinatario" class="form-control" id="InputDestinatario3" placeholder="Destinatário">
-                  </div>
-
-                 <!-- phone -->
-                  <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                    <label for="Inputphone3">Telefone*</label>
-                   <input type="phone" class="form-control" id="Inputphone3" placeholder="Telefone">
-                  </div>
-                 
-                 <!-- adress -->  
-                  <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
-                    <label for="InputAdress3">Endereço*</label>
-                    <input type="endereco" class="form-control" id="InputEndereco3" placeholder="Endereço">
-                  </div>   
-                
-                 <!-- number -->
-                  <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                    <label for="InputNumero3">Número*</label>
-                   <input type="numero" class="form-control" id="InputNumero3" placeholder="Número">
-                  </div>
-
-                 <!-- complement -->
-                  <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                    <label for="Inputcomplement3">Complemento*</label>
-                   <input type="complement" class="form-control" id="InputComplement3" placeholder="Complemento">
-                  </div> 
-
-                  <!-- bairro -->  
-                  <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
-                    <label for="InputBairro3">Bairro*</label>
-                    <input type="endereco" class="form-control" id="InputBairro3" placeholder="Bairro">
-                  </div>   
-                  
-                  <div class="col-xs-12 col-sm-6 col-lg-6">
-                    <strong>Estado*</strong>
-                    <select class="form-control">
-                      <option>SP</option>
-                      <option>RJ</option>
-                      <option>BH</option>
-                      <option>TO</option>
-                    </select>
-                   </div> 
-
-                    <div class="col-xs-12 col-sm-6 col-lg-6 select-block">
-                      <strong>Cidade*</strong>
-                      <select class="form-control">
-                        <option>São Paulo</option>
-                        <option>Rio de Janeiro</option>
-                        <option>Belo Horizonte</option>
-                        <option>Palmas</option>
-                      </select>
-                   </div> 
-
-                    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-                      <button type="submit" class="btn btn-default btn-block">Cadastrar endereço</button>
-                    </div>
-                 </form> 
-                </div>
-               </div>
-
-               <!-- I forgot my password -->
-                <div class="newsAdrres-checkout">
-                  <div class="checkout-title">
-                    <span>1. Esqueci minha senha</span>
-                    <p>Enviaremos um email com instruções para alteração de senha.</p>
-                  </div>
-                
-                 <div class="row"> 
-                  <form> 
-                  <!-- enter your email -->  
-                  <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
-                    <label for="InputEmailinformado4">Informe seu email</label>
-                    <input type="emailInformado" class="form-control" id="InputEmailinformado4" placeholder="">
-                  </div>   
-
-                  <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
-                    <button type="submit" class="btn btn-default btn-block">Enviar</button>
-                  </div>
-                  
-                  <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
-                    <a href="#" title="Voltar">Voltar</a>
-                  </p>
-                  
-                 </form>
-
-                </div>
-               </div>
-              </article>
-
-	            <!-- pagemnto checkout -->  
-              <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">teste</article>
-              <!--finish checkout-->
-	            <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">teste</article>  
-		        </div>   
-	         </section>
+        <!--Form login --> 
+        <form>
+          <!-- email -->
+          <div class="form-group">
+            <label for="InputEmail1">Email</label>
+            <input type="email" class="form-control" id="InputEmail1" placeholder="Email">
           </div>
+          
+          <!-- password -->
+          <div class="form-group">
+            <label for="InputPassword1">Senha</label>
+            <input type="password" class="form-control" id="InputPassword1" placeholder="Senha">
+          </div>
+
+          <div class="form-group">
+           <button type="submit" class="btn btn-default btn-block">Continuar</button>
+          </div>
+
+          <p class="forgot-password text-center">
+            <a href="#" title="Esqueci minha senha">Esqueci minha senha</a>
+          </p>
+          <hr>
+
+          <div class="form-group">
+           <button type="submit" class="btn btn-default btn-block">Fazer novo cadastro</button>
+          </div>
+        </form>
+      </section>
+      
+      <!-- Form checkout -->  
+      <section class="contentForm">
+        <header class="checkout-title">
+          <span>1. Sou um novo cliente</span>
+        </header>
+        <div class="row">
+          <form>    
+            <!-- e-mail -->  
+            <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+              <label for="InputEmail2">Email</label>
+              <input type="email" class="form-control" id="InputEmail2" placeholder="jane.doe@.com">
+            </div> 
+
+            <!-- name -->
+            <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+              <label for="InputName2">Nome</label>
+              <input type="text" class="form-control" id="InputName2" placeholder="Seu nome">
+            </div>
+
+            <!-- last name -->
+            <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+              <label for="InputSobrenome2">Sobrenome</label>
+              <input type="text" class="form-control" id="InputSobrenome2" placeholder="Sobrenome">
+            </div>   
+
+            <!-- CPF Checkout form -->
+            <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+              <label for="InputCpf2">CPF</label>
+              <input type="text" class="form-control" id="InputCpf2" placeholder="000.000.000-00">
+            </div>   
+
+            <!-- date birth -->
+            <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+              <label for="InputDataNascimento2">Data de Nascimento</label>
+              <input type="text" class="form-control" id="InputDataNascimento2" placeholder="00/00/0000">
+            </div>
+
+            <!-- password -->
+            <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+              <label for="InputPassword2">Senha</label>
+              <input type="password" class="form-control" id="InputPassword2" placeholder="Senha">
+            </div>
+
+            <!-- password -->
+            <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+              <label for="InputPassword2">Confirmação de Senha</label>
+              <input type="password" class="form-control" id="InputPassword2" placeholder="Confirmar Senha">
+            </div>   
+            
+            <!-- checkbox terms -->  
+            <div class="col-xs-12 col-sm-12 col-lg-12 checkbox">
+              <label>
+                <input type="checkbox"> Li e concordo com os <a href="#" title="Termos">termos</a>
+              </label>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+              <button type="submit" class="btn btn-default btn-block">Cadastrar</button>
+            </div>
+          </form>
+
+          <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
+            <a href="#" title="Voltar">Voltar</a>
+          </p>
+        </div> 
+      </section>
+
+      <!-- New address checkout -->
+      <section class="newsAddress-block">
+        <header class="checkout-title">
+          <span>1. Novo Endereço</span>
+        </header>
+      
+       <div class="row"> 
+       <form> 
+       <!-- cep -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <label for="InputCep3">Cep*</label>
+          <input type="cep" class="form-control" id="InputCep3" placeholder="00000-000">
+        </div>
+        
+        <!-- link cep -->
+        
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <div class="link-form"><a href="http://www.buscacep.correios.com.br/servicos/dnec/menuAction.do?Metodo=menuEndereco" title="Não sei meu CEP" target="_blank">Não sei meu CEP*</a></div> 
+        </div> 
+        
+        <!-- receiver -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <label for="InputDestinatario3">Destinatário*</label>
+         <input type="destinatario" class="form-control" id="InputDestinatario3" placeholder="Destinatário">
+        </div>
+
+       <!-- phone -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <label for="Inputphone3">Telefone*</label>
+         <input type="phone" class="form-control" id="Inputphone3" placeholder="Telefone">
+        </div>
+       
+       <!-- address -->  
+        <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+          <label for="InputAddress3">Endereço*</label>
+          <input type="endereco" class="form-control" id="InputEndereco3" placeholder="Endereço">
+        </div>   
+      
+       <!-- number -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <label for="InputNumero3">Número*</label>
+         <input type="numero" class="form-control" id="InputNumero3" placeholder="Número">
+        </div>
+
+       <!-- complement -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <label for="Inputcomplement3">Complemento*</label>
+         <input type="complement" class="form-control" id="InputComplement3" placeholder="Complemento">
+        </div> 
+
+        <!-- bairro -->  
+        <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+          <label for="InputBairro3">Bairro*</label>
+          <input type="endereco" class="form-control" id="InputBairro3" placeholder="Bairro">
+        </div>   
+        
+        <div class="col-xs-12 col-sm-6 col-lg-6 select-block">
+          <strong>Estado*</strong>
+          <select class="form-control">
+            <option>SP</option>
+            <option>RJ</option>
+            <option>BH</option>
+            <option>TO</option>
+          </select>
+         </div> 
+
+          <div class="col-xs-12 col-sm-6 col-lg-6 select-block">
+            <strong>Cidade*</strong>
+            <select class="form-control">
+              <option>São Paulo</option>
+              <option>Rio de Janeiro</option>
+              <option>Belo Horizonte</option>
+              <option>Palmas</option>
+            </select>
+         </div> 
+
+          <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+            <button type="submit" class="btn btn-default btn-block">Cadastrar endereço</button>
+          </div>
+       </form> 
+      </div>
+     </section>
+
+     <!-- I forgot my password -->
+      <section class="forgot-mypassword">
+        <header class="checkout-title">
+          <span>1. Esqueci minha senha</span>
+          <p>Enviaremos um email com instruções para alteração de senha.</p>
+        </header>
+      
+       <div class="row"> 
+        <form> 
+        <!-- enter your email -->  
+        <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+          <label for="InputEmailinformado4">Informe seu email</label>
+          <input type="emailInformado" class="form-control" id="InputEmailinformado4" placeholder="">
+        </div>   
+
+        <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+          <button type="submit" class="btn btn-default btn-block">Enviar</button>
+        </div>
+        
+        <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
+          <a href="#" title="Voltar">Voltar</a>
+        </p>
+        
+       </form>
+
+      </div>
+     </section>
+
+     <!-- address checkout -->
+      <section class="address-block">
+        <header class="checkout-title">
+          <span>1. Endereço</span>
+        </header>
+
+        <div class="row">
+          <section class="col-xs-12 col-ms-12 col-lg-12">
+            <article class="block-address-default">
+              <!-- edit options -->
+              <div class="edit-options">
+                <a href="#" title="Editar">Editar</a>
+              </div>
+              
+              <!-- info address-->
+              <span class="title-name-address">Anderson Camacho</span>
+              <span class="field-address-info">Rua Paúva, 559</span>
+              <span class="field-address-info">Vila Matilde</span>
+              <span class="field-address-info">CEP 05116-000</span>
+              <span class="field-address-info">São Paulo,SP</span>
+              <span class="field-address-info primary-address">Endereço principal</span>
+            </article>   
+          </section>
+
+          <!-- link new address -->  
+          <a class="col-xs-12 col-ms-7 col-lg-7 text-left" href="#" title="Cadastrar novo endereço">+ Cadastrar novo endereço</a>
+          <!-- link view all address -->
+          <a class="col-xs-12 col-ms-5 col-lg-5 text-right" href="#" title="Mostrar todos os endereços">Mostrar todos</a>
+        </div>
+
+         <!-- Delivery -->
+          <section class="delivery-address">
+            <header class="checkout-title">
+              <span>1. Entrega</span>
+            </header>
+              <section>
+                <form>
+                <article class="block-address-default">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      Direct Log - R$23,00 - 7 dias úteis
+                    </label> 
+                  </div>
+                  <hr>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      e-Sedex - R$26,00 - 5 dias úteis
+                    </label>
+                </div>
+             </article>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-default btn-block">Ir para o pagamento</button>
+            </div>
+          
+            </form> 
+           </section>
+         
+         </section>
+      </section>
+
+      
+      <!-- registered address -->
+      <section class="registered-adress">
+        <header class="checkout-title">
+          <span>1. Endereços cadastrados</span>
+        </header>
+
+        <div class="row">
+          <section class="col-xs-12 col-ms-12 col-lg-12">
+            <article class="block-address-default">            
+              <!-- info address-->
+              <span class="title-name-address">Anderson Camacho</span>
+              <span class="field-address-info">Rua Paúva, 559</span>
+              <span class="field-address-info">Vila Matilde</span>
+              <span class="field-address-info">CEP 05116-000</span>
+              <span class="field-address-info">São Paulo,SP</span>
+              <span class="field-address-info primary-address">Endereço principal</span>
+            </article>   
+          </section>
+
+           <section class="col-xs-12 col-ms-12 col-lg-12">
+            <article class="block-address-default">            
+              <!-- info address-->
+              <span class="title-name-address">Ricardo Santos</span>
+              <span class="field-address-info">Rua Augusta, 34</span>
+              <span class="field-address-info">Vila Matilde</span>
+              <span class="field-address-info">CEP 05116-000</span>
+              <span class="field-address-info">São Paulo,SP</span> 
+              <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
+            </article>   
+          </section>
+
+          <section class="col-xs-12 col-ms-12 col-lg-12">
+           <article class="block-address-default">            
+            <!-- info address-->
+            <span class="title-name-address">Rafael Almeida</span>
+            <span class="field-address-info">Rua Paúva, 559</span>
+            <span class="field-address-info">Osasco</span>
+            <span class="field-address-info">CEP 05116-000</span>
+            <span class="field-address-info">São Paulo,SP</span>
+            <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
+           </article>   
+          </section>
+
+          <section class="col-xs-12 col-ms-12 col-lg-12">
+           <article class="block-address-default">            
+            <!-- info address-->
+            <span class="title-name-address">Guilherme Oliveira</span>
+            <span class="field-address-info">Rua Maria, 23</span>
+            <span class="field-address-info">Vila das Oliveiras</span>
+            <span class="field-address-info">CEP 05116-000</span>
+            <span class="field-address-info">Campinas,SP</span>
+            <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
+           </article>   
+          </section>
+
+          <section class="col-xs-12 col-ms-12 col-lg-12">
+           <article class="block-address-default">            
+            <!-- info address-->
+            <span class="title-name-address">Antonio José</span>
+            <span class="field-address-info">Rua Conceição, 559</span>
+            <span class="field-address-info">Vila Patriarca</span>
+            <span class="field-address-info">CEP 05116-000</span>
+            <span class="field-address-info">São Paulo,SP</span>
+            <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
+           </article>   
+          </section>
+        </div>
+    </article>
+
+    <!-- pagemnto checkout -->  
+    <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">
+  
+      <section class="contentlogin"> 
+        <header class="checkout-title">
+           <span>2. Pagamento</span>
+           <p>Selecione uma forma de pagamento</p>
+        </header>
+      </section> 
+    </article>
+    <!--finish checkout-->
+    <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">teste</article>  
+  </div>   
+ </section>
+</div>

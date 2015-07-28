@@ -9,7 +9,7 @@
    Base styles: Checkout
    ========================================================================== */
 
-/*** Checkout
+/*** Checkout login
 ***/
 
 #single-page-checkout {
@@ -23,10 +23,70 @@
 #single-page-checkout .checkout-title span {
   height: auto;
   color: #000;
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-transform: uppercase;
+  line-height: 28px;
+}
+#single-page-checkout .select-block {
+  padding-bottom: 15px;
+}
+#single-page-checkout .select-block strong {
+  margin-bottom: 5px;
+  display: inline-block;
 }
 #single-page-checkout .link-form {
   padding-top: 21%;
   padding-bottom: 3%;
 }
+#single-page-checkout .block-address-default {
+  display: block;
+  border: 1px solid #ccc;
+  height: auto;
+  width: 100%;
+  padding: 40px 15px 15px 15px;
+  margin-bottom: 20px;
+}
+#single-page-checkout .edit-options {
+  position: absolute;
+  height: 20px;
+  right: 0;
+  width: 75px;
+  top: 15px;
+}
+#single-page-checkout 
+.title-name-address,
+.field-address-info {
+  color: #999;
+  display: block;
+  line-height: 18px;
+  font-size: 14px;
+}
+#single-page-checkout .title-name-address {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#single-page-checkout .primary-address {
+  font-size: 12px;
+  padding-top: 20px;
+  display: block;
+}
+#single-page-checkout
+.address-checkout
+.text-left,
+.text-right {
+  font-size: 12px;
+}
+#single-page-checkout .block-address-default, .registered-adress {
+  padding-top: 15px; 
+}
+#single-page-checkout .registered-adress .block-address-default button {
+  margin-top: 10px;
+  display: block;
+}
+#single-page-checkout .address-block .delivery-address {
+  margin-top: 10px;
+}
+
+/*** Checkout payment
+***/
