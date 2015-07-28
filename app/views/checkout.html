@@ -2,8 +2,11 @@
 <div class="row">
  <section id="single-page-checkout" class="col-md-12 clearfix">
   <div class="row">
-    <!-- login checkout-->
     <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red; ">
+
+    <!----------------------- STEP 1 Checkout Login------------------------->
+
+    <!-- login checkout-->
       <section class="contentlogin"> 
         <header class="checkout-title">
            <span>1. Login</span>
@@ -22,22 +25,27 @@
             <label for="InputPassword1">Senha</label>
             <input type="password" class="form-control" id="InputPassword1" placeholder="Senha">
           </div>
-
+           
+          <!-- buttom continue --> 
           <div class="form-group">
            <button type="submit" class="btn btn-default btn-block">Continuar</button>
           </div>
-
+          
+          <!-- link forgot password --> 
           <p class="forgot-password text-center">
             <a href="#" title="Esqueci minha senha">Esqueci minha senha</a>
           </p>
           <hr>
 
+          <!-- buttom new sign -->
           <div class="form-group">
            <button type="submit" class="btn btn-default btn-block">Fazer novo cadastro</button>
           </div>
         </form>
       </section>
+      <!----------------------- /STEP 1 Checkout login------------------------->
       
+      <!----------------------- STEP 2 Checkout Form------------------------->
       <!-- Form checkout -->  
       <section class="contentForm">
         <header class="checkout-title">
@@ -93,18 +101,22 @@
                 <input type="checkbox"> Li e concordo com os <a href="#" title="Termos">termos</a>
               </label>
             </div>
-
+             
+            <!-- buttom regsiter --> 
             <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
               <button type="submit" class="btn btn-default btn-block">Cadastrar</button>
             </div>
           </form>
-
+          
+          <!-- link back -->
           <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
             <a href="#" title="Voltar">Voltar</a>
           </p>
         </div> 
       </section>
-
+      <!----------------------- /STEP 2 Checkout Form------------------------->
+ 
+      <!----------------------- STEP 3 Checkout Address------------------------->
       <!-- New address checkout -->
       <section class="newsAddress-block">
         <header class="checkout-title">
@@ -120,7 +132,6 @@
         </div>
         
         <!-- link cep -->
-        
         <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
           <div class="link-form"><a href="http://www.buscacep.correios.com.br/servicos/dnec/menuAction.do?Metodo=menuEndereco" title="Não sei meu CEP" target="_blank">Não sei meu CEP*</a></div> 
         </div> 
@@ -160,7 +171,8 @@
           <label for="InputBairro3">Bairro*</label>
           <input type="endereco" class="form-control" id="InputBairro3" placeholder="Bairro">
         </div>   
-        
+
+        <!-- select state -->
         <div class="col-xs-12 col-sm-6 col-lg-6 select-block">
           <strong>Estado*</strong>
           <select class="form-control">
@@ -171,23 +183,27 @@
           </select>
          </div> 
 
-          <div class="col-xs-12 col-sm-6 col-lg-6 select-block">
-            <strong>Cidade*</strong>
-            <select class="form-control">
-              <option>São Paulo</option>
-              <option>Rio de Janeiro</option>
-              <option>Belo Horizonte</option>
-              <option>Palmas</option>
-            </select>
-         </div> 
+        <!-- select city -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 select-block">
+         <strong>Cidade*</strong>
+          <select class="form-control">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Belo Horizonte</option>
+            <option>Palmas</option>
+          </select>
+        </div> 
 
-          <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
-            <button type="submit" class="btn btn-default btn-block">Cadastrar endereço</button>
-          </div>
+        <!-- buttom register address -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+          <button type="submit" class="btn btn-default btn-block">Cadastrar endereço</button>
+        </div>
        </form> 
       </div>
      </section>
+     <!----------------------- /STEP 3 Checkout Address------------------------->
 
+     <!----------------------- STEP 4 Checkout Forgot my password------------------------->
      <!-- I forgot my password -->
       <section class="forgot-mypassword">
         <header class="checkout-title">
@@ -195,27 +211,28 @@
           <p>Enviaremos um email com instruções para alteração de senha.</p>
         </header>
       
-       <div class="row"> 
         <form> 
         <!-- enter your email -->  
-        <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+        <div class="form-group">
           <label for="InputEmailinformado4">Informe seu email</label>
           <input type="emailInformado" class="form-control" id="InputEmailinformado4" placeholder="">
         </div>   
-
-        <div class="col-xs-12 col-sm-12 col-lg-12 form-group">
+        
+        <!-- buttom submit -->
+        <div class="form-group">
           <button type="submit" class="btn btn-default btn-block">Enviar</button>
         </div>
         
-        <p class="col-xs-12 col-sm-12 col-lg-12 text-center">
+        <!-- link back -->
+        <p class="text-center">
           <a href="#" title="Voltar">Voltar</a>
         </p>
         
        </form>
-
-      </div>
      </section>
+     <!----------------------- /STEP 4 Checkout Forgot my password------------------------->
 
+     <!----------------------- STEP 5 Checkout address ------------------------->
      <!-- address checkout -->
       <section class="address-block">
         <header class="checkout-title">
@@ -251,34 +268,38 @@
             <header class="checkout-title">
               <span>1. Entrega</span>
             </header>
-              <section>
-                <form>
-                <article class="block-address-default">
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                      Direct Log - R$23,00 - 7 dias úteis
-                    </label> 
-                  </div>
-                  <hr>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      e-Sedex - R$26,00 - 5 dias úteis
-                    </label>
-                </div>
-             </article>
 
-            <div class="form-group">
-              <button type="submit" class="btn btn-default btn-block">Ir para o pagamento</button>
+         <section>
+            <form>
+            <!-- radio delivery -->  
+            <article class="block-address-default">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  Direct Log - R$23,00 - 7 dias úteis
+                </label> 
+              </div>
+              <hr>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  e-Sedex - R$26,00 - 5 dias úteis
+                </label>
             </div>
-          
-            </form> 
-           </section>
-         
-         </section>
+          </article>
+            
+        <!-- buttom go payment -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-default btn-block">Ir para o pagamento</button>
+        </div>
+      
+        </form> 
+       </section>  
+       </section>
       </section>
+      <!----------------------- /STEP 5 Checkout address ------------------------->
 
+      <!----------------------- STEP 6 Checkout registered address ------------------------->
       
       <!-- registered address -->
       <section class="registered-adress">
@@ -286,32 +307,26 @@
           <span>1. Endereços cadastrados</span>
         </header>
 
-        <div class="row">
-          <section class="col-xs-12 col-ms-12 col-lg-12">
-            <article class="block-address-default">            
-              <!-- info address-->
-              <span class="title-name-address">Anderson Camacho</span>
-              <span class="field-address-info">Rua Paúva, 559</span>
-              <span class="field-address-info">Vila Matilde</span>
-              <span class="field-address-info">CEP 05116-000</span>
-              <span class="field-address-info">São Paulo,SP</span>
-              <span class="field-address-info primary-address">Endereço principal</span>
-            </article>   
-          </section>
-
-           <section class="col-xs-12 col-ms-12 col-lg-12">
-            <article class="block-address-default">            
-              <!-- info address-->
-              <span class="title-name-address">Ricardo Santos</span>
-              <span class="field-address-info">Rua Augusta, 34</span>
-              <span class="field-address-info">Vila Matilde</span>
-              <span class="field-address-info">CEP 05116-000</span>
-              <span class="field-address-info">São Paulo,SP</span> 
-              <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
-            </article>   
-          </section>
-
-          <section class="col-xs-12 col-ms-12 col-lg-12">
+          <article class="block-address-default">            
+            <!-- info address-->
+            <span class="title-name-address">Anderson Camacho</span>
+            <span class="field-address-info">Rua Paúva, 559</span>
+            <span class="field-address-info">Vila Matilde</span>
+            <span class="field-address-info">CEP 05116-000</span>
+            <span class="field-address-info">São Paulo,SP</span>
+            <span class="field-address-info primary-address">Endereço principal</span>
+          </article>   
+           
+          <article class="block-address-default">            
+            <!-- info address-->
+            <span class="title-name-address">Ricardo Santos</span>
+            <span class="field-address-info">Rua Augusta, 34</span>
+            <span class="field-address-info">Vila Matilde</span>
+            <span class="field-address-info">CEP 05116-000</span>
+            <span class="field-address-info">São Paulo,SP</span> 
+            <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
+          </article>   
+         
            <article class="block-address-default">            
             <!-- info address-->
             <span class="title-name-address">Rafael Almeida</span>
@@ -321,9 +336,7 @@
             <span class="field-address-info">São Paulo,SP</span>
             <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
            </article>   
-          </section>
-
-          <section class="col-xs-12 col-ms-12 col-lg-12">
+                  
            <article class="block-address-default">            
             <!-- info address-->
             <span class="title-name-address">Guilherme Oliveira</span>
@@ -333,9 +346,7 @@
             <span class="field-address-info">Campinas,SP</span>
             <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
            </article>   
-          </section>
-
-          <section class="col-xs-12 col-ms-12 col-lg-12">
+           
            <article class="block-address-default">            
             <!-- info address-->
             <span class="title-name-address">Antonio José</span>
@@ -345,18 +356,25 @@
             <span class="field-address-info">São Paulo,SP</span>
             <button type="submit" class="btn btn-default btn-block">Definir endereço padrão</button>
            </article>   
-          </section>
-        </div>
+
+      </section>
     </article>
+    <!----------------------- /STEP 6 Checkout registered address ------------------------->
 
     <!-- pagemnto checkout -->  
     <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">
-  
-      <section class="contentlogin"> 
+      <section class="contentPayment"> 
         <header class="checkout-title">
            <span>2. Pagamento</span>
            <p>Selecione uma forma de pagamento</p>
         </header>
+
+        <section class="voucher-block">
+          <article>
+            hfhdshfsdh
+          </article> 
+        </section> 
+     
       </section> 
     </article>
     <!--finish checkout-->
