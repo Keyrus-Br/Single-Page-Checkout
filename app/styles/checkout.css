@@ -38,7 +38,7 @@
   padding-top: 21%;
   padding-bottom: 3%;
 }
-#single-page-checkout .block-address-default {
+#single-page-checkout .block-container-default {
   display: block;
   border: 1px solid #ccc;
   height: auto;
@@ -77,10 +77,10 @@
 .text-right {
   font-size: 12px;
 }
-#single-page-checkout .block-address-default, .registered-adress {
+#single-page-checkout .registered-adress .block-container-default {
   padding-top: 15px; 
 }
-#single-page-checkout .registered-adress .block-address-default button {
+#single-page-checkout .registered-adress .block-container-default button {
   margin-top: 10px;
   display: block;
 }
@@ -90,3 +90,11 @@
 
 /*** Checkout payment
 ***/
+
+#single-page-checkout .contentPayment .cupom-block .block-container-default strong {
+   margin-bottom: 5px;
+   display: block;
+}
+#single-page-checkout .contentPayment .cupom-block .block-container-default .glyphicon-ok {
+    margin-top: 10px;
+}
