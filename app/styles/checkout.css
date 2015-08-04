@@ -98,3 +98,33 @@
 #single-page-checkout .contentPayment .cupom-block .block-container-default .glyphicon-ok {
     margin-top: 10px;
 }
+#single-page-checkout .contentPayment .cupom-block .block-container-default {
+  padding-top: 15px;
+}
+#single-page-checkout .contentPayment .block-payment-checkout .payment-cards {
+  margin-bottom: 10px;
+}
+#single-page-checkout .contentPayment .block-payment-checkout .payment-cards .payment-checkout-link {
+  padding: 15px;
+  border: 1px solid #ccc;
+  display: block;
+  height: auto;
+  width: 100%;
+} 
+#single-page-checkout .contentPayment .block-payment-checkout .payment-cards .payment-checkout-link .glyphicon-credit-card {
+  padding-right: 10px;
+  font-size: 1.6em;
+}
+#single-page-checkout .contentPayment .block-payment-checkout .payment-cards .payment-checkout-link [class*="glyphicon-credit-card"]:before, [class^=glyphicon-credit-card]:before {
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  vertical-align: -.2em;
+}
