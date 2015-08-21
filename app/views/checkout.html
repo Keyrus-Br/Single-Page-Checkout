@@ -248,12 +248,14 @@
               </div>
               
               <!-- info address-->
-              <span class="title-name-address">Anderson Camacho</span>
-              <span class="field-address-info">Rua Paúva, 559</span>
-              <span class="field-address-info">Vila Matilde</span>
-              <span class="field-address-info">CEP 05116-000</span>
-              <span class="field-address-info">São Paulo,SP</span>
-              <span class="field-address-info primary-address">Endereço principal</span>
+              <address>
+                <span class="title-name-address">Anderson Camacho</span>
+                <span class="field-address-info">Rua Paúva, 559</span>
+                <span class="field-address-info">Vila Matilde</span>
+                <span class="field-address-info">CEP 05116-000</span>
+                <span class="field-address-info">São Paulo,SP</span>
+                <span class="field-address-info primary-address">Endereço principal</span>
+              </address>
             </article>   
           </section>
 
@@ -377,7 +379,9 @@
               <div class="col-xs-12 col-sm-10 col-lg-10">
                 <input type="voucher" class="form-control" id="inputVoucher" placeholder="">
               </div>
-              <a href="#" title="Click para validar o Cupom"><span class="col-xs-12 col-sm-1 col-lg-1 glyphicon glyphicon-ok"></span></a>
+              <a href="#" title="Click para validar o Cupom">
+                <span class="col-xs-12 col-sm-1 col-lg-1 glyphicon glyphicon-ok"></span>
+              </a>
           </div>
           </article> 
         </section> 
@@ -390,13 +394,232 @@
               Cartão de Crédito
             </a>
           </article>
+          
+          <div class="row">
+            <article class="form-payment-checkout clearfix">
+              <form>
+                <!-- NumberCard -->
+                  <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                    <label for="InputCardNumberOne">Número do Cartão</label>
+                    <input type="cardNumberOne" class="form-control" id="InputCardNumberOne" placeholder="0000-00000-0000-0000">
+                  </div>
 
+                  <!-- validity month -->
+                  <div class="col-xs-12 col-md-6 col-lg-6 select-block">
+                      <strong>Validade Mês*</strong>
+                      <select class="form-control">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                      </select>
+                  </div>
+
+                  <!-- validity year -->
+                  <div class="col-xs-12 col-md-6 col-lg-6 select-block">
+                      <strong>Validade Ano*</strong>
+                      <select class="form-control">
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                      </select>
+                  </div>
+
+                  <!-- name titular -->
+                  <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                    <label for="InputNameTitular">Nome do titular</label>
+                    <input type="NameTitular" class="form-control" id="NameTitular">
+                  </div>
+                  
+                  <!-- cpf titular -->
+                  <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                    <label for="InputCpfTitular">CPF do Titular</label>
+                    <input type="cpfTitular" class="form-control" id="cpfTitular" placeholder="000.000.000-00">
+                  </div>
+
+                  <!-- security code -->
+                  <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                    <label for="InputSecurityCode">Código de segurança</label>
+                    <input type="SecurityCode" class="form-control" id="SecurityCode">
+                  </div>
+
+                  <!-- installments -->
+                  <div class="col-xs-12 col-md-12 col-lg-12 select-block">
+                      <strong>Parcelamento</strong>
+                      <select class="form-control">
+                        <option>1x R$1200,00</option>
+                        <option>2X R$ 600,00</option>
+                        <option>3X R$ 400,00</option>
+                        <option>3X R$ 200,00</option>
+                      </select>
+                  </div>
+              </form>
+            </article>
+          </div>
           <!-- payment two card -->
           <article class="payment-cards">
             <a href="#" class="payment-checkout-link">
               <i class="glyphicon glyphicon-credit-card"></i>
               Dois Cartões de Crédito
             </a>
+          </article>
+
+          <article>
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#oneCard" aria-controls="oneCard" role="tab" data-toggle="tab">1 Cartão</a></li>
+                <li role="presentation"><a href="#twoCard" aria-controls="twoCard" role="tab" data-toggle="tab">2 Cartão</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="oneCard">
+                  <div class="row">
+                  <article class="form-payment-checkout clearfix">
+                    <form>
+                      <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                        <label class="" for="">Quanto quer pagar neste primeiro cartão?</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">$</div>
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="">
+                        </div>
+                      </div>
+
+                      <!-- NumberCard -->
+                      <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                        <label for="InputCardNumberOne">Número do Cartão</label>
+                        <input type="cardNumberOne" class="form-control" id="InputCardNumberOne" placeholder="0000-00000-0000-0000">
+                      </div>
+
+                      <!-- validity month -->
+                      <div class="col-xs-12 col-md-6 col-lg-6 select-block">
+                          <strong>Validade Mês*</strong>
+                          <select class="form-control">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                          </select>
+                      </div>
+
+                      <!-- validity year -->
+                      <div class="col-xs-12 col-md-6 col-lg-6 select-block">
+                          <strong>Validade Ano*</strong>
+                          <select class="form-control">
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                          </select>
+                      </div>
+
+                      <!-- name titular -->
+                      <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                        <label for="InputNameTitular">Nome do titular</label>
+                        <input type="NameTitular" class="form-control" id="NameTitular">
+                      </div>
+                      
+                      <!-- cpf titular -->
+                      <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                        <label for="InputCpfTitular">CPF do Titular</label>
+                        <input type="cpfTitular" class="form-control" id="cpfTitular" placeholder="000.000.000-00">
+                      </div>
+
+                      <!-- security code -->
+                      <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                        <label for="InputSecurityCode">Código de segurança</label>
+                        <input type="SecurityCode" class="form-control" id="SecurityCode">
+                      </div>
+
+                      <!-- installments -->
+                      <div class="col-xs-12 col-md-12 col-lg-12 select-block">
+                        <strong>Parcelamento</strong>
+                        <select class="form-control">
+                          <option>1x R$1200,00</option>
+                          <option>2X R$ 600,00</option>
+                          <option>3X R$ 400,00</option>
+                          <option>3X R$ 200,00</option>
+                        </select>
+                      </div>
+                    </form>
+                   </article>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="twoCard">
+                 <div class="row">
+                  <article class="form-payment-checkout clearfix">
+                    <form>
+                      <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                        <label class="" for="">Quanto quer pagar neste segundo cartão?</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">$</div>
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="">
+                        </div>
+                      </div>
+
+                      <!-- NumberCard -->
+                        <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                          <label for="InputCardNumberOne">Número do Cartão</label>
+                          <input type="cardNumberOne" class="form-control" id="InputCardNumberOne" placeholder="0000-00000-0000-0000">
+                        </div>
+
+                        <!-- validity month -->
+                        <div class="col-xs-12 col-md-6 col-lg-6 select-block">
+                            <strong>Validade Mês*</strong>
+                            <select class="form-control">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                            </select>
+                        </div>
+
+                        <!-- validity year -->
+                        <div class="col-xs-12 col-md-6 col-lg-6 select-block">
+                            <strong>Validade Ano*</strong>
+                            <select class="form-control">
+                              <option>2016</option>
+                              <option>2017</option>
+                              <option>2018</option>
+                              <option>2019</option>
+                            </select>
+                        </div>
+
+                        <!-- name titular -->
+                        <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                          <label for="InputNameTitular">Nome do titular</label>
+                          <input type="NameTitular" class="form-control" id="NameTitular">
+                        </div>
+                        
+                        <!-- cpf titular -->
+                        <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                          <label for="InputCpfTitular">CPF do Titular</label>
+                          <input type="cpfTitular" class="form-control" id="cpfTitular" placeholder="000.000.000-00">
+                        </div>
+
+                        <!-- security code -->
+                        <div class="col-xs-12 col-md-6 col-lg-6 form-group">
+                          <label for="InputSecurityCode">Código de segurança</label>
+                          <input type="SecurityCode" class="form-control" id="SecurityCode">
+                        </div>
+
+                        <!-- installments -->
+                        <div class="col-xs-12 col-md-12 col-lg-12 select-block">
+                            <strong>Parcelamento</strong>
+                            <select class="form-control">
+                              <option>1x R$1200,00</option>
+                              <option>2X R$ 600,00</option>
+                              <option>3X R$ 400,00</option>
+                              <option>3X R$ 200,00</option>
+                            </select>
+                        </div>
+                    </form>
+                   </article>
+                  </div>
+                </div>
+                </div>
+              </div>
           </article>
         </section>
       </section> 
