@@ -2,8 +2,7 @@
 <div class="row">
  <section id="single-page-checkout" class="col-md-12 clearfix">
   <div class="row">
-    <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red; ">
-
+    <article class="col-xs-12 col-sm-4 col-lg-4 block-login">
     <!----------------------- STEP 1 Checkout Login------------------------->
 
     <!-- login checkout-->
@@ -271,7 +270,7 @@
               <span>Entrega</span>
             </header>
 
-         <section>
+         <section class="block-delivery">
             <form>
             <!-- radio delivery -->  
             <article class="block-container-default">
@@ -364,8 +363,8 @@
     <!----------------------- /STEP 6 Checkout registered address ------------------------->
 
     <!-- pagemnto checkout -->  
-    <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">
-      <section class="contentPayment"> 
+    <article class="col-xs-12 col-sm-4 col-lg-4 block-payment">
+    <section class="contentPayment"> 
         <header class="checkout-title">
            <span>2. Pagamento</span>
         </header>
@@ -385,6 +384,16 @@
           </div>
           </article> 
         </section> 
+        
+        <section class="my-card-payment">
+          <article class="block-container-default">
+            <header><strong>Meu Cartão</strong></header>
+            <hr>
+            <span class="clearfix"><strong>Bandeira do cartão:</strong> Master Card</span>
+            <span class="clearfix"><strong>Numero do cartão:</strong> xxxx-xxxx-xxxx-9876</span>
+            <span class="clearfix"><strong>Nome do titular:</strong> Anderson Camacho</span>
+          </article>
+        </section>  
 
         <!-- payment one card -->
         <section class="block-payment-checkout">
@@ -398,6 +407,18 @@
           <div class="row">
             <article class="form-payment-checkout clearfix">
               <form>
+
+             <!-- installments -->
+                <div class="col-xs-12 col-md-12 col-lg-12 select-block">
+                    <strong>Parcelamento</strong>
+                    <select class="form-control">
+                      <option>1x R$1200,00</option>
+                      <option>2X R$ 600,00</option>
+                      <option>3X R$ 400,00</option>
+                      <option>3X R$ 200,00</option>
+                    </select>
+                </div>
+
                 <!-- NumberCard -->
                   <div class="col-xs-12 col-md-12 col-lg-12 form-group">
                     <label for="InputCardNumberOne">Número do Cartão</label>
@@ -444,16 +465,6 @@
                     <input type="SecurityCode" class="form-control" id="SecurityCode">
                   </div>
 
-                  <!-- installments -->
-                  <div class="col-xs-12 col-md-12 col-lg-12 select-block">
-                      <strong>Parcelamento</strong>
-                      <select class="form-control">
-                        <option>1x R$1200,00</option>
-                        <option>2X R$ 600,00</option>
-                        <option>3X R$ 400,00</option>
-                        <option>3X R$ 200,00</option>
-                      </select>
-                  </div>
               </form>
             </article>
           </div>
@@ -465,7 +476,7 @@
             </a>
           </article>
 
-          <article>
+          <article class="nav-tabs-payment">
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#oneCard" aria-controls="oneCard" role="tab" data-toggle="tab">1 Cartão</a></li>
@@ -484,6 +495,17 @@
                           <div class="input-group-addon">$</div>
                           <input type="text" class="form-control" id="exampleInputAmount" placeholder="">
                         </div>
+                      </div>
+
+                      <!-- installments -->
+                      <div class="col-xs-12 col-md-12 col-lg-12 select-block">
+                        <strong>Parcelamento</strong>
+                        <select class="form-control">
+                          <option>1x R$1200,00</option>
+                          <option>2X R$ 600,00</option>
+                          <option>3X R$ 400,00</option>
+                          <option>3X R$ 200,00</option>
+                        </select>
                       </div>
 
                       <!-- NumberCard -->
@@ -532,20 +554,11 @@
                         <input type="SecurityCode" class="form-control" id="SecurityCode">
                       </div>
 
-                      <!-- installments -->
-                      <div class="col-xs-12 col-md-12 col-lg-12 select-block">
-                        <strong>Parcelamento</strong>
-                        <select class="form-control">
-                          <option>1x R$1200,00</option>
-                          <option>2X R$ 600,00</option>
-                          <option>3X R$ 400,00</option>
-                          <option>3X R$ 200,00</option>
-                        </select>
-                      </div>
                     </form>
                    </article>
                   </div>
                 </div>
+
                 <div role="tabpanel" class="tab-pane" id="twoCard">
                  <div class="row">
                   <article class="form-payment-checkout clearfix">
@@ -557,6 +570,17 @@
                           <input type="text" class="form-control" id="exampleInputAmount" placeholder="">
                         </div>
                       </div>
+
+                      <!-- installments -->
+                        <div class="col-xs-12 col-md-12 col-lg-12 select-block">
+                            <strong>Parcelamento</strong>
+                            <select class="form-control">
+                              <option>1x R$1200,00</option>
+                              <option>2X R$ 600,00</option>
+                              <option>3X R$ 400,00</option>
+                              <option>3X R$ 200,00</option>
+                            </select>
+                        </div>
 
                       <!-- NumberCard -->
                         <div class="col-xs-12 col-md-12 col-lg-12 form-group">
@@ -603,29 +627,95 @@
                           <label for="InputSecurityCode">Código de segurança</label>
                           <input type="SecurityCode" class="form-control" id="SecurityCode">
                         </div>
-
-                        <!-- installments -->
-                        <div class="col-xs-12 col-md-12 col-lg-12 select-block">
-                            <strong>Parcelamento</strong>
-                            <select class="form-control">
-                              <option>1x R$1200,00</option>
-                              <option>2X R$ 600,00</option>
-                              <option>3X R$ 400,00</option>
-                              <option>3X R$ 200,00</option>
-                            </select>
-                        </div>
                     </form>
                    </article>
                   </div>
                 </div>
-                </div>
-              </div>
+               </div>
+             </article>
+
+           <!-- payment two card -->
+            <article class="payment-boleto">
+              <a href="#" class="payment-checkout-link">
+                <i class="glyphicon glyphicon-barcode"></i>
+                Boleto
+              </a>
+            </article>
+
+            <article class="block-container-default">
+             <strong>O boleto bancário estará disponível para impressão na página de Confirmação do Pedido.</strong>
+             <p>O prazo de entrega passará a valer a partir do momento em que o banco confirmar o pagamento do boleto.
+              O processo poderá levar até 72h.</p>
+            </article>
+            
+            <a href="#" class="btn btn-default btn-block">Continuar</a>
+            <a href="#">Alterar forma de pagamento</a>
           </article>
-        </section>
+           
+          <!--finish checkout-->
+            <article class="col-xs-12 col-sm-4 col-lg-4 block-buy-final">
+              <section class="contentResumo">
+               <header class="checkout-title">
+                 <span>3. Resumo do Pedido</span>
+                </header>
+               
+              
+              <ul class="block-container-default">
+                <li>
+                  <div class="product-checkout">
+                    <picture class="thumb">
+                     <img src="/images/keyrus-produto.jpg" alt="produto" class="img-thumbnail">
+                    </picture>
+
+                    <div class="description-checkout">
+                      <strong>produto Checkout  Keyrus</strong>
+                      <span>Quantidade: 1</span>
+                    
+                    </div> 
+                   </div>
+                </li>
+              </ul>
+              
+              <div class="checkout-totals">
+                <table class="table-totals">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Subtotal</td>
+                      <td class="text-right">
+                        R$279,90</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        Frete</td>
+                      <td class="text-right">R$30,00</td>
+                    </tr>
+
+                    <tr class="tr-last">
+                      <td>
+                        <strong>Total</strong>
+                      </td>
+                      <td class="text-right"><strong>R$309,90</strong></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+             </div>
+             
+             <div class="form-group">
+               <button type="submit" class="btn btn-default btn-block">Finalizar Compra</button>
+             </div>
+              <div class="row other-form-payments">
+                <a class="col-xs-12 col-ms-6 col-lg-6 text-left" href="#">Alterar forma de pagamento</a>
+                <a class="col-xs-12 col-ms-6 col-lg-6 text-right" href="#">Alterar endereço de entrega</a> 
+              </div>
+            </section>
+ 
+            </article> 
+          </section>
       </section> 
     </article>
-    <!--finish checkout-->
-    <article class="col-xs-12 col-sm-4 col-lg-4" style="border: 1px solid red">teste</article>  
   </div>   
  </section>
 </div>

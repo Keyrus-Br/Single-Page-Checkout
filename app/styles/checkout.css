@@ -131,3 +131,68 @@
 #single-page-checkout .contentPayment .block-payment-checkout .form-payment-checkout {
   margin-top: 10px;
 }
+#single-page-checkout .contentPayment .block-payment-checkout .payment-boleto {
+  margin-bottom: 10px;
+}
+#single-page-checkout .contentPayment .block-payment-checkout .payment-boleto .payment-checkout-link {
+  padding: 15px;
+  border: 1px solid #ccc;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+#single-page-checkout .contentPayment .block-payment-checkout .payment-boleto .payment-checkout-link .glyphicon-barcode {
+  padding-right: 10px;
+  font-size: 1.6em; 
+}
+#single-page-checkout .contentPayment .block-payment-checkout .payment-boleto .payment-checkout-link [class*="glyphicon glyphicon-barcode"]:before, [class^=glyphicon-barcode]:before {
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  vertical-align: -.2em;
+}
+#single-page-checkout .block-payment .block-container-default {
+  padding: 15px
+}
+#single-page-checkout .block-buy-final .block-container-default {
+  padding: 15px
+}
+#single-page-checkout .block-buy-final .product-checkout {
+    display: table;
+}
+#single-page-checkout .block-buy-final .thumb {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+  padding-right: 15px;
+}
+#single-page-checkout .block-buy-final .thumb img {
+  width: 65px;
+  height: 65px;
+}
+#single-page-checkout .block-buy-final .description-checkout {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+#single-page-checkout .block-buy-final ul li {
+  list-style-type: none;
+}
+#single-page-checkout .block-buy-final .table-totals {
+    width: 100%;
+    border: 0;
+}
+#single-page-checkout .block-buy-final .table-totals td {
+    border-bottom: 1px solid #ededed;
+    padding: 14px 0 8px;
+}
+#single-page-checkout .block-buy-final .other-form-payments {
+  font-size: 0.9em;
+}
