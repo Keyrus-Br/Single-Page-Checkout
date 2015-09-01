@@ -1,0 +1,38 @@
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$jarResourceCms=jar:br.com.keyrus.constants.B2csinglepagecheckoutaddonConstants&/b2csinglepagecheckoutaddon/import/cockpit/cmscockpit
+
+# Create PageTemplates
+# These define the layout for pages
+INSERT_UPDATE PageTemplate;$contentCV[unique=true];uid[unique=true];name;frontendTemplateName;restrictedPageTypes(code);active[default=true]
+;;SinglePageCheckoutSummaryPageTemplate;Single Page Checkout Summary Page Template;;ContentPage;false
+
+# Single Page Checkout Summary Page Templates
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='SinglePageCheckoutSummaryPageTemplate'];validComponentTypes(code);compTypeGroup(code)
+;SiteLogo;;;logo
+;HeaderLinks;;;headerlinks
+;SearchBox;;;searchbox
+;MiniCart;;;minicart
+;NavigationBar;;;navigation
+;SideContent;;;narrow
+;Footer;;;footer
+;TopHeaderSlot;;;wide
+;BottomHeaderSlot;;;wide
+;PlaceholderContentSlot;;;
+
+# Bind Content Slots to Single Page Checkout Summary Page Templates
+INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='SinglePageCheckoutSummaryPageTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
+;;SiteLogo-SinglePageCheckoutSummaryPage;SiteLogo;;SiteLogoSlot;true
+;;HomepageLink-SinglePageCheckoutSummaryPage;HomepageNavLink;;HomepageNavLinkSlot;true
+;;NavigationBar-SinglePageCheckoutSummaryPage;NavigationBar;;NavigationBarSlot;true
+;;MiniCart-SinglePageCheckoutSummaryPage;MiniCart;;MiniCartSlot;true
+;;Footer-SinglePageCheckoutSummaryPage;Footer;;FooterSlot;true
+;;HeaderLinks-SinglePageCheckoutSummaryPage;HeaderLinks;;HeaderLinksSlot;true
+;;SearchBox-SinglePageCheckoutSummaryPage;SearchBox;;SearchBoxSlot;true
+;;TopHeaderSlot-SinglePageCheckoutSummaryPage;TopHeaderSlot;;TopHeaderSlot;true
+;;BottomHeaderSlot-SinglePageCheckoutSummaryPage;BottomHeaderSlot;;BottomHeaderSlot;true
+;;PlaceholderContentSlot-SinglePageCheckoutSummaryPage;PlaceholderContentSlot;;PlaceholderContentSlot;true
+
+# Content Pages
+INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
+;;singlePageCheckoutSummaryPage;Single Page Checkout Summary Page;SinglePageCheckoutSummaryPageTemplate;singlePageCheckoutSummary
